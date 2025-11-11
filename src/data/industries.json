@@ -1,0 +1,38 @@
+[
+  {
+    "id": "fintech",
+    "name": "Fintech",
+    "description": "Secure, compliant financial products that users trust.",
+    "icon": "💳",
+    "examples": ["Payment platforms", "Banking apps", "Investment tools", "Cryptocurrency exchanges"]
+  },
+  {
+    "id": "retail",
+    "name": "Retail & E-commerce",
+    "description": "Seamless shopping experiences that drive conversions.",
+    "icon": "🛍️",
+    "examples": ["E-commerce platforms", "Marketplace apps", "Inventory management", "POS systems"]
+  },
+  {
+    "id": "healthtech",
+    "name": "Healthtech",
+    "description": "HIPAA-compliant solutions that improve patient outcomes.",
+    "icon": "🏥",
+    "examples": ["Telemedicine platforms", "Health records", "Fitness apps", "Medical devices"]
+  },
+  {
+    "id": "saas",
+    "name": "SaaS",
+    "description": "Scalable software that grows with your customers.",
+    "icon": "☁️",
+    "examples": ["B2B platforms", "Productivity tools", "CRM systems", "Project management"]
+  },
+  {
+    "id": "logistics",
+    "name": "Logistics & Supply Chain",
+    "description": "Optimize operations with real-time tracking and automation.",
+    "icon": "📦",
+    "examples": ["Fleet management", "Warehouse systems", "Delivery apps", "Supply chain analytics"]
+  }
+]
+
