@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "name": "Sarah Chen",
+    "role": "CEO, TechFlow",
+    "company": "TechFlow",
+    "image": "/testimonials/sarah.jpg",
+    "quote": "Renix Solutions transformed our product from concept to launch in 8 weeks. Their attention to detail and technical expertise is unmatched.",
+    "rating": 5
+  },
+  {
+    "id": "2",
+    "name": "Rajesh Kumar",
+    "role": "CTO, PaySecure",
+    "company": "PaySecure",
+    "image": "/testimonials/rajesh.jpg",
+    "quote": "Working with Yash and the team was a game-changer. They built a scalable platform that handles millions of transactions seamlessly.",
+    "rating": 5
+  },
+  {
+    "id": "3",
+    "name": "Emily Rodriguez",
+    "role": "Product Lead, HealthConnect",
+    "company": "HealthConnect",
+    "image": "/testimonials/emily.jpg",
+    "quote": "The design system they created has become the foundation of our entire product suite. Clean, maintainable, and beautiful.",
+    "rating": 5
+  }
+]
+

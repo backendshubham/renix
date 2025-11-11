@@ -1,0 +1,154 @@
+[
+  {
+    "id": "ai-ml",
+    "title": "AI & Machine Learning",
+    "description": "Harness the power of artificial intelligence and machine learning to transform your business. We build intelligent systems using cutting-edge AI/ML technologies including GPT, LLMs, computer vision, and predictive analytics.",
+    "icon": "ai",
+    "technologies": ["OpenAI GPT", "TensorFlow", "PyTorch", "LangChain", "Hugging Face", "Computer Vision", "NLP", "LLMs"],
+    "features": [
+      "Custom AI/ML model development",
+      "Large Language Models (LLMs) integration",
+      "Computer vision & image processing",
+      "Natural Language Processing (NLP)",
+      "Predictive analytics & forecasting",
+      "AI-powered chatbots & assistants",
+      "Recommendation systems",
+      "Anomaly detection & fraud prevention"
+    ]
+  },
+  {
+    "id": "product-strategy",
+    "title": "Product Strategy",
+    "description": "We help you define product vision, roadmap, and go-to-market strategy with data-driven insights. Our strategic approach ensures your product aligns with business goals and market demands.",
+    "icon": "strategy",
+    "technologies": ["Market Research", "Analytics", "User Research", "Data Analysis"],
+    "features": [
+      "Market research & competitive analysis",
+      "Product roadmap planning",
+      "MVP definition & validation",
+      "Go-to-market strategy",
+      "User journey mapping",
+      "Product-market fit analysis",
+      "Growth strategy & metrics"
+    ]
+  },
+  {
+    "id": "ux-design",
+    "title": "UX/UI Design",
+    "description": "User-centered design that converts. We create intuitive interfaces backed by research and testing, using modern design tools and frameworks to deliver pixel-perfect experiences.",
+    "icon": "design",
+    "technologies": ["Figma", "Adobe XD", "Sketch", "Framer", "Design Systems", "Prototyping"],
+    "features": [
+      "User research & personas",
+      "Wireframing & prototyping",
+      "Design systems & component libraries",
+      "Usability testing & A/B testing",
+      "Accessibility compliance (WCAG)",
+      "Mobile-first responsive design",
+      "Design-to-code handoff"
+    ]
+  },
+  {
+    "id": "frontend-dev",
+    "title": "Frontend Development",
+    "description": "Modern, performant frontends built with React, Next.js, Vue.js, and TypeScript. We leverage the latest frameworks and tools to create fast, scalable, and beautiful user interfaces.",
+    "icon": "frontend",
+    "technologies": ["React", "Next.js", "Vue.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Three.js", "WebGL"],
+    "features": [
+      "React & Next.js development",
+      "TypeScript & type safety",
+      "Responsive & mobile-first design",
+      "Performance optimization (Core Web Vitals)",
+      "Progressive Web Apps (PWA)",
+      "3D graphics & animations",
+      "State management (Redux, Zustand)",
+      "Testing & quality assurance"
+    ]
+  },
+  {
+    "id": "backend-dev",
+    "title": "Backend Development",
+    "description": "Scalable APIs and microservices. Cloud-native architecture with best practices. We build robust, secure, and high-performance backend systems using modern technologies.",
+    "icon": "backend",
+    "technologies": ["Node.js", "Python", "Go", "Rust", "GraphQL", "PostgreSQL", "MongoDB", "Redis", "Docker", "Kubernetes"],
+    "features": [
+      "REST & GraphQL APIs",
+      "Microservices architecture",
+      "Database design & optimization",
+      "Cloud deployment (AWS, Azure, GCP)",
+      "Real-time systems (WebSockets)",
+      "API security & authentication",
+      "Caching strategies",
+      "Serverless functions"
+    ]
+  },
+  {
+    "id": "devops",
+    "title": "DevOps & Cloud",
+    "description": "CI/CD pipelines, infrastructure as code, and monitoring. Ship faster with confidence using modern DevOps practices and cloud-native solutions.",
+    "icon": "devops",
+    "technologies": ["Docker", "Kubernetes", "AWS", "Azure", "GCP", "Terraform", "GitHub Actions", "Jenkins", "Prometheus", "Grafana"],
+    "features": [
+      "CI/CD pipelines automation",
+      "Infrastructure as Code (IaC)",
+      "Container orchestration",
+      "Monitoring & logging (ELK, Prometheus)",
+      "Auto-scaling & load balancing",
+      "Security scanning & compliance",
+      "Disaster recovery & backup",
+      "Cost optimization"
+    ]
+  },
+  {
+    "id": "data-ai",
+    "title": "Data Engineering & Analytics",
+    "description": "Leverage data to make better decisions. From analytics to machine learning solutions, we help you unlock insights from your data using modern data stack technologies.",
+    "icon": "data",
+    "technologies": ["Python", "Apache Spark", "Airflow", "Snowflake", "BigQuery", "Tableau", "Power BI", "dbt", "Kafka"],
+    "features": [
+      "Data analytics & visualization",
+      "ETL/ELT pipelines",
+      "Data warehousing solutions",
+      "Business intelligence dashboards",
+      "Real-time data processing",
+      "Data governance & quality",
+      "Predictive analytics",
+      "Data lake architecture"
+    ]
+  },
+  {
+    "id": "blockchain",
+    "title": "Blockchain & Web3",
+    "description": "Build decentralized applications and integrate blockchain technology. We develop smart contracts, DeFi solutions, and Web3 applications using Ethereum, Solana, and other blockchain platforms.",
+    "icon": "blockchain",
+    "technologies": ["Solidity", "Ethereum", "Solana", "Web3.js", "IPFS", "Smart Contracts", "DeFi", "NFTs"],
+    "features": [
+      "Smart contract development",
+      "DeFi application development",
+      "NFT marketplace development",
+      "Blockchain integration",
+      "Web3 wallet integration",
+      "Token development (ERC-20, ERC-721)",
+      "Decentralized app (dApp) development",
+      "Blockchain consulting"
+    ]
+  },
+  {
+    "id": "mobile-dev",
+    "title": "Mobile Development",
+    "description": "Native and cross-platform mobile app development. We build high-performance mobile applications for iOS and Android using React Native, Flutter, and native technologies.",
+    "icon": "mobile",
+    "technologies": ["React Native", "Flutter", "Swift", "Kotlin", "iOS", "Android", "Expo"],
+    "features": [
+      "Cross-platform mobile apps",
+      "Native iOS & Android development",
+      "App Store & Play Store deployment",
+      "Push notifications",
+      "In-app purchases & payments",
+      "Offline-first architecture",
+      "Mobile performance optimization",
+      "App analytics & crash reporting"
+    ]
+  }
+]
+

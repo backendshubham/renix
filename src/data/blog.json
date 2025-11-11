@@ -1,0 +1,33 @@
+[
+  {
+    "id": "design-tokens",
+    "title": "Building Scalable Design Systems with Design Tokens",
+    "author": "Yash Jain",
+    "date": "2024-03-15",
+    "excerpt": "Learn how design tokens can help you build consistent, maintainable design systems that scale across teams and platforms.",
+    "slug": "design-tokens",
+    "tags": ["Design", "Design Systems", "Frontend"],
+    "readTime": "5 min read"
+  },
+  {
+    "id": "data-layer",
+    "title": "Architecting a Modern Data Layer",
+    "author": "Yash Jain",
+    "date": "2024-02-28",
+    "excerpt": "Exploring patterns for building a robust data layer that handles caching, synchronization, and offline support.",
+    "slug": "data-layer",
+    "tags": ["Backend", "Architecture", "Data"],
+    "readTime": "8 min read"
+  },
+  {
+    "id": "product-maturity",
+    "title": "From MVP to Scale: Product Maturity Framework",
+    "author": "Yash Jain",
+    "date": "2024-02-10",
+    "excerpt": "A framework for thinking about product maturity and making the right technical decisions at each stage.",
+    "slug": "product-maturity",
+    "tags": ["Product", "Strategy", "Engineering"],
+    "readTime": "6 min read"
+  }
+]
+

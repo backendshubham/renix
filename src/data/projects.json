@@ -1,0 +1,45 @@
+[
+  {
+    "id": "fintech-platform",
+    "title": "Fintech Payment Platform",
+    "category": "Fintech",
+    "description": "Built a secure payment processing platform handling $10M+ monthly transactions.",
+    "image": "/projects/fintech.jpg",
+    "tags": ["Next.js", "TypeScript", "Stripe", "AWS"],
+    "metrics": {
+      "transactions": "$10M+ monthly",
+      "users": "50K+",
+      "uptime": "99.9%"
+    },
+    "slug": "fintech-platform"
+  },
+  {
+    "id": "ecommerce-marketplace",
+    "title": "E-commerce Marketplace",
+    "category": "Retail",
+    "description": "Scalable marketplace connecting 500+ vendors with 100K+ active buyers.",
+    "image": "/projects/ecommerce.jpg",
+    "tags": ["React", "Node.js", "PostgreSQL", "Redis"],
+    "metrics": {
+      "vendors": "500+",
+      "users": "100K+",
+      "revenue": "$5M+ ARR"
+    },
+    "slug": "ecommerce-marketplace"
+  },
+  {
+    "id": "healthcare-portal",
+    "title": "Healthcare Patient Portal",
+    "category": "Healthtech",
+    "description": "HIPAA-compliant patient management system serving 20+ clinics.",
+    "image": "/projects/healthcare.jpg",
+    "tags": ["Next.js", "TypeScript", "HIPAA", "Azure"],
+    "metrics": {
+      "clinics": "20+",
+      "patients": "30K+",
+      "compliance": "100%"
+    },
+    "slug": "healthcare-portal"
+  }
+]
+
