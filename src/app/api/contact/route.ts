@@ -1,22 +1,15 @@
-import { NextRequest, NextResponse } from 'next/server'
+import { NextResponse } from 'next/server'
 
-export async function POST(request: NextRequest) {
+export async function POST(request: Request) {
   try {
     const body = await request.json()
-
-    // TODO: Integrate with email service or database
-    // For now, just return success
-    console.log('Contact form submission:', body)
-
-    return NextResponse.json(
-      { message: 'Message received successfully' },
-      { status: 200 }
-    )
+    // TODO: Implement contact form handling
+    return NextResponse.json({ success: true, message: 'Message received' })
   } catch (error) {
-    return NextResponse.json(
-      { error: 'Failed to process request' },
-      { status: 500 }
-    )
+    return NextResponse.json({ error: 'Invalid request' }, { status: 400 })
   }
 }
 
+export async function GET() {
+  return NextResponse.json({ message: 'Contact API' })
+}

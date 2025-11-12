@@ -25,58 +25,60 @@ export default function Services() {
 
         <AnimatedSection className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16">
           {servicesData.map((service) => (
-            <AnimatedItem key={service.id}>
-              <Card>
-                <div className="w-16 h-16 mb-6 text-primary">
-                  <ServiceIcon icon={service.icon} />
-                </div>
-                <h3 className="text-xl md:text-2xl font-heading font-semibold text-ink mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-sm md:text-base text-muted mb-6 leading-relaxed">{service.description}</p>
-                
-                {/* Technologies */}
-                {service.technologies && (
-                  <div className="mb-4">
-                    <p className="text-xs md:text-sm font-medium text-ink mb-2">Technologies:</p>
-                    <div className="flex flex-wrap gap-2">
-                      {service.technologies.slice(0, 4).map((tech, index) => (
-                        <span
-                          key={index}
-                          className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                      {service.technologies.length > 4 && (
-                        <span className="px-2 py-1 bg-line text-muted rounded-full text-xs font-medium">
-                          +{service.technologies.length - 4} more
-                        </span>
-                      )}
-                    </div>
+            <AnimatedItem key={service.id} className="h-full flex">
+              <Card className="h-full flex flex-col">
+                <div className="flex-1 flex flex-col">
+                  <div className="w-16 h-16 mb-6 text-primary">
+                    <ServiceIcon icon={service.icon} />
                   </div>
-                )}
+                  <h3 className="text-xl md:text-2xl font-heading font-semibold text-ink mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-sm md:text-base text-muted mb-6 leading-relaxed flex-1">{service.description}</p>
+                  
+                  {/* Technologies */}
+                  {service.technologies && (
+                    <div className="mb-4">
+                      <p className="text-xs md:text-sm font-medium text-ink mb-2">Technologies:</p>
+                      <div className="flex flex-wrap gap-2">
+                        {service.technologies.slice(0, 4).map((tech, index) => (
+                          <span
+                            key={index}
+                            className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                        {service.technologies.length > 4 && (
+                          <span className="px-2 py-1 bg-line text-muted rounded-full text-xs font-medium">
+                            +{service.technologies.length - 4} more
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  )}
 
-                {/* Features */}
-                <div className="mb-4">
-                  <p className="text-xs md:text-sm font-medium text-ink mb-3">Key Features:</p>
-                  <ul className="space-y-2">
-                    {service.features.slice(0, 4).map((feature, index) => (
-                      <li key={index} className="text-xs md:text-sm text-muted flex items-start leading-relaxed">
-                        <span className="text-primary mr-2 flex-shrink-0 mt-1">✓</span>
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                    {service.features.length > 4 && (
-                      <li className="text-xs md:text-sm text-muted">
-                        +{service.features.length - 4} more features
-                      </li>
-                    )}
-                  </ul>
+                  {/* Features */}
+                  <div className="mb-4">
+                    <p className="text-xs md:text-sm font-medium text-ink mb-3">Key Features:</p>
+                    <ul className="space-y-2">
+                      {service.features.slice(0, 4).map((feature, index) => (
+                        <li key={index} className="text-xs md:text-sm text-muted flex items-start leading-relaxed">
+                          <span className="text-primary mr-2 flex-shrink-0 mt-1">✓</span>
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                      {service.features.length > 4 && (
+                        <li className="text-xs md:text-sm text-muted">
+                          +{service.features.length - 4} more features
+                        </li>
+                      )}
+                    </ul>
+                  </div>
                 </div>
-                <div className="pt-4 border-t border-line">
+                <div className="pt-4 border-t border-line mt-auto">
                   <AnimatedLink
-                    href="/contact"
+                    href={`/services/${service.id}`}
                     className="text-primary hover:text-primary/80 font-medium text-xs md:text-sm transition-colors"
                   >
                     Learn More Details →

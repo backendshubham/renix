@@ -1,14 +1,63 @@
 'use client'
 
+import Image from 'next/image'
+
 const companies = [
-  { name: 'YouTube', color: '#FF0000' },
-  { name: 'Figma', color: '#F24E1E' },
-  { name: 'Google', color: '#4285F4' },
-  { name: 'Apple', color: '#000000' },
-  { name: 'Paytm', color: '#00BAF2' },
-  { name: 'Microsoft', color: '#00A4EF' },
-  { name: 'Amazon', color: '#FF9900' },
-  { name: 'Meta', color: '#0084FF' },
+  { 
+    name: 'YouTube', 
+    logo: 'https://logos-world.net/wp-content/uploads/2020/04/YouTube-Logo.png',
+    alt: 'YouTube',
+    fallback: 'https://www.youtube.com/img/desktop/yt_1200.png',
+    customClass: 'scale-110'
+  },
+  { 
+    name: 'Cursor', 
+    logo: 'https://logos-world.net/wp-content/uploads/2023/11/Cursor-Logo.png',
+    alt: 'Cursor',
+    fallback: 'https://cdn.simpleicons.org/cursor/000000'
+  },
+  { 
+    name: 'Blockchain', 
+    logo: 'https://logos-world.net/wp-content/uploads/2020/06/Blockchain-Logo.png',
+    alt: 'Blockchain',
+    fallback: 'https://cdn.worldvectorlogo.com/logos/blockchain-1.svg'
+  },
+  { 
+    name: 'Google', 
+    logo: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png',
+    alt: 'Google',
+    fallback: 'https://logos-world.net/wp-content/uploads/2020/11/Google-Logo.png'
+  },
+  { 
+    name: 'Apple', 
+    logo: 'https://www.apple.com/ac/globalfooter/7/en_IN/assets/ac-globalfooter/apple-logo.svg',
+    alt: 'Apple',
+    fallback: 'https://logos-world.net/wp-content/uploads/2020/04/Apple-Logo.png'
+  },
+  { 
+    name: 'Paytm', 
+    logo: 'https://logos-world.net/wp-content/uploads/2021/03/Paytm-Logo.png',
+    alt: 'Paytm',
+    fallback: 'https://cdn.worldvectorlogo.com/logos/paytm-1.svg'
+  },
+  { 
+    name: 'Microsoft', 
+    logo: 'https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31',
+    alt: 'Microsoft',
+    fallback: 'https://logos-world.net/wp-content/uploads/2020/04/Microsoft-Logo.png'
+  },
+  { 
+    name: 'Amazon', 
+    logo: 'https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png',
+    alt: 'Amazon',
+    fallback: 'https://cdn.worldvectorlogo.com/logos/amazon-4.svg'
+  },
+  { 
+    name: 'Meta', 
+    logo: 'https://logos-world.net/wp-content/uploads/2021/10/Meta-Logo.png',
+    alt: 'Meta',
+    fallback: 'https://cdn.worldvectorlogo.com/logos/meta-1.svg'
+  },
 ]
 
 export default function CompanyLogosSlider() {
@@ -29,14 +78,21 @@ export default function CompanyLogosSlider() {
             {duplicatedCompanies.map((company, index) => (
               <div
                 key={`${company.name}-${index}`}
-                className="flex-shrink-0 w-32 md:w-40 h-12 md:h-14 flex items-center justify-center"
+                className="flex-shrink-0 w-40 md:w-48 h-12 md:h-14 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100"
               >
-                <div
-                  className="text-lg md:text-xl font-heading font-semibold text-muted hover:text-primary transition-colors duration-300 whitespace-nowrap"
-                  style={{ color: company.color }}
-                >
-                  {company.name}
-                </div>
+                <Image
+                  src={company.logo}
+                  alt={company.alt}
+                  width={160}
+                  height={56}
+                  className={`object-contain w-full h-full ${company.customClass || ''}`}
+                  onError={(e) => {
+                    if (company.fallback) {
+                      e.currentTarget.src = company.fallback
+                    }
+                  }}
+                  unoptimized
+                />
               </div>
             ))}
           </div>
@@ -45,4 +101,3 @@ export default function CompanyLogosSlider() {
     </section>
   )
 }
-
