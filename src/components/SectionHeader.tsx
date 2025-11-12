@@ -35,7 +35,7 @@ export default function SectionHeader({
       )}
       <motion.h2
         variants={fadeInUp}
-        className="text-4xl md:text-5xl font-heading font-bold text-ink mb-4"
+        className={`text-4xl md:text-5xl font-heading font-bold mb-4 ${className.includes('text-white') ? 'text-white' : 'text-ink'}`}
         style={{ transform: 'translateZ(30px)' }}
       >
         {title}
@@ -43,7 +43,7 @@ export default function SectionHeader({
       {description && (
         <motion.p
           variants={fadeInUp}
-          className="text-lg text-muted leading-relaxed"
+          className={`text-lg leading-relaxed ${className.includes('text-white') ? 'text-white/90' : 'text-muted'}`}
           style={{ transform: 'translateZ(10px)' }}
         >
           {description}
