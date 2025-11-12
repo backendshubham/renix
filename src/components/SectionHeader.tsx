@@ -16,6 +16,8 @@ export default function SectionHeader({
   description,
   className = '',
 }: SectionHeaderProps) {
+  const isLightTheme = className.includes('text-white')
+  
   return (
     <motion.div
       variants={fadeInUp}
@@ -28,14 +30,14 @@ export default function SectionHeader({
       {subtitle && (
         <motion.p
           variants={fadeInUp}
-          className="text-accent font-semibold text-sm uppercase tracking-wider mb-2"
+          className={`font-semibold text-sm uppercase tracking-wider mb-2 ${isLightTheme ? 'text-white/80' : 'text-accent'}`}
         >
           {subtitle}
         </motion.p>
       )}
       <motion.h2
         variants={fadeInUp}
-        className={`text-4xl md:text-5xl font-heading font-bold mb-4 ${className.includes('text-white') ? 'text-white' : 'text-ink'}`}
+        className={`text-4xl md:text-5xl font-heading font-bold mb-4 ${isLightTheme ? 'text-white' : 'text-ink'}`}
         style={{ transform: 'translateZ(30px)' }}
       >
         {title}
@@ -43,7 +45,7 @@ export default function SectionHeader({
       {description && (
         <motion.p
           variants={fadeInUp}
-          className={`text-lg leading-relaxed ${className.includes('text-white') ? 'text-white/90' : 'text-muted'}`}
+          className={`text-lg leading-relaxed ${isLightTheme ? 'text-white/90' : 'text-muted'}`}
           style={{ transform: 'translateZ(10px)' }}
         >
           {description}
