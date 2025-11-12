@@ -1,22 +1,15 @@
-import { NextRequest, NextResponse } from 'next/server'
+import { NextResponse } from 'next/server'
 
-export async function POST(request: NextRequest) {
+export async function POST(request: Request) {
   try {
     const body = await request.json()
-
-    // TODO: Integrate with analytics service (GA, Plausible, etc.)
-    // For now, just log the event
-    console.log('Analytics event:', body)
-
-    return NextResponse.json(
-      { message: 'Event tracked successfully' },
-      { status: 200 }
-    )
+    // TODO: Implement analytics tracking
+    return NextResponse.json({ success: true })
   } catch (error) {
-    return NextResponse.json(
-      { error: 'Failed to track event' },
-      { status: 500 }
-    )
+    return NextResponse.json({ error: 'Invalid request' }, { status: 400 })
   }
 }
 
+export async function GET() {
+  return NextResponse.json({ message: 'Analytics API' })
+}
