@@ -15,6 +15,10 @@ const Background3D = dynamic(() => import('@/components/Background3D'), {
   loading: () => null,
 })
 
+const PageLoader = dynamic(() => import('@/components/PageLoader'), {
+  ssr: false,
+})
+
 const sora = Sora({
   subsets: ['latin'],
   variable: '--font-sora',
@@ -64,6 +68,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${sora.variable} ${poppins.variable} ${inter.variable} ${nunitoSans.variable}`}>
       <body className="relative">
+        <PageLoader />
         <JsonLd />
         <Background3D intensity={0.28} />
         <Navbar />
