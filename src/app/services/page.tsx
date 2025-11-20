@@ -89,7 +89,7 @@ export default function Services() {
           ))}
         </AnimatedSection>
 
-        {/* OpulentJewel Featured Section */}
+        {/* RatnaSamhita Featured Section */}
         <AnimatedItem className="mb-12 md:mb-16">
           <Card className="bg-gradient-to-br from-primary/10 via-accent/5 to-primary/5 border-2 border-primary/20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -101,7 +101,7 @@ export default function Services() {
                       Featured Product
                     </span>
                     <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-ink">
-                      OpulentJewel
+                      RatnaSamhita
                     </h2>
                     <p className="text-sm md:text-base text-primary/80 font-medium">
                       Premium Jewelry Management System
@@ -130,10 +130,10 @@ export default function Services() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all duration-200 font-medium text-base md:text-lg shadow-soft hover:shadow-hover"
                   >
-                    Access OpulentJewel Panel →
+                    Access RatnaSamhita Panel →
                   </AnimatedLink>
                   <AnimatedLink
-                    href="/case-studies/opulentjewel"
+                    href="/case-studies/ratnasamhita"
                     className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 bg-white text-primary border-2 border-primary rounded-lg hover:bg-primary/5 transition-all duration-200 font-medium text-base md:text-lg"
                   >
                     View Case Study

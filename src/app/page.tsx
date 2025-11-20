@@ -185,7 +185,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* OpulentJewel Featured Hint */}
+      {/* RatnaSamhita Featured Hint */}
       <section className="py-12 md:py-16 bg-gradient-to-br from-primary/5 via-accent/5 to-primary/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedItem>
@@ -203,7 +203,7 @@ export default function Home() {
                     </span>
                   </div>
                   <h3 className="text-2xl md:text-3xl font-heading font-bold text-ink mb-2">
-                    OpulentJewel
+                    RatnaSamhita
                   </h3>
                   <p className="text-base md:text-lg text-muted mb-4 leading-relaxed">
                     Premium Jewelry Management System - Transform your jewelry business with complete cloud-based management solution.
@@ -218,7 +218,7 @@ export default function Home() {
                       Access Panel →
                     </AnimatedLink>
                     <AnimatedLink
-                      href="/case-studies/opulentjewel"
+                      href="/case-studies/ratnasamhita"
                       className="inline-flex items-center justify-center px-6 py-3 bg-white text-primary border-2 border-primary rounded-lg hover:bg-primary/5 transition-all duration-200 font-medium text-sm md:text-base"
                     >
                       Learn More
@@ -246,12 +246,12 @@ export default function Home() {
                 <Link href={`/case-studies/${project.slug}`}>
                   <Card>
                     <div className={`aspect-video rounded-lg mb-6 flex items-center justify-center ${
-                      project.slug === 'opulentjewel'
+                      project.slug === 'ratnasamhita'
                         ? 'bg-gradient-to-br from-primary/30 via-accent/15 to-primary/40 shadow-soft'
                         : 'bg-gradient-to-br from-primary/10 to-accent/10'
                     }`}>
                       <span className="text-6xl">
-                        {project.slug === 'opulentjewel'
+                        {project.slug === 'ratnasamhita'
                           ? '💎'
                           : project.category === 'Fintech'
                           ? '💳'

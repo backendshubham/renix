@@ -47,12 +47,12 @@ export default function CaseStudy({ params }: { params: { slug: string } }) {
 
         <div className="mb-8">
           <div className={`aspect-video rounded-card mb-6 flex items-center justify-center ${
-            project.slug === 'opulentjewel'
+            project.slug === 'ratnasamhita'
               ? 'bg-gradient-to-br from-primary/30 via-accent/15 to-primary/40 shadow-soft'
               : 'bg-line'
           }`}>
             <span className="text-8xl">
-              {project.slug === 'opulentjewel'
+              {project.slug === 'ratnasamhita'
                 ? '💎'
                 : project.category === 'Fintech'
                 ? '💳'
@@ -87,12 +87,12 @@ export default function CaseStudy({ params }: { params: { slug: string } }) {
         </div>
 
         <div className="space-y-6">
-          {project.slug === 'opulentjewel' ? (
+          {project.slug === 'ratnasamhita' ? (
             <>
               <Card hover={false}>
                 <h3 className="text-2xl font-heading font-semibold text-ink mb-4">Overview</h3>
                 <p className="text-muted leading-relaxed mb-4">
-                  OpulentJewel is a comprehensive cloud-based management platform designed specifically for jewelry retailers. 
+                  RatnaSamhita is a comprehensive cloud-based management platform designed specifically for jewelry retailers. 
                   It transforms traditional jewelry business operations by digitizing inventory management, billing, customer 
                   engagement, and analytics into one unified system.
                 </p>
@@ -127,7 +127,7 @@ export default function CaseStudy({ params }: { params: { slug: string } }) {
               <Card hover={false}>
                 <h3 className="text-2xl font-heading font-semibold text-ink mb-4">Impact</h3>
                 <p className="text-muted leading-relaxed mb-4">
-                  OpulentJewel enables jewelry retailers to digitize their operations completely, from inventory management 
+                  RatnaSamhita enables jewelry retailers to digitize their operations completely, from inventory management 
                   to customer engagement. The platform supports multi-shop businesses, provides real-time insights, and 
                   offers a seamless mobile experience for both staff and customers.
                 </p>
@@ -145,7 +145,7 @@ export default function CaseStudy({ params }: { params: { slug: string } }) {
                     rel="noopener noreferrer"
                     className="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 font-medium transition-colors"
                   >
-                    Visit OpulentJewel →
+                    Visit RatnaSamhita →
                   </AnimatedLink>
                 </div>
               </Card>

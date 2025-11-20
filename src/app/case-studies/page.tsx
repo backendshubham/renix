@@ -28,7 +28,7 @@ export default function CaseStudies() {
                 <Card>
                   <div className="aspect-video bg-line rounded-lg mb-4 flex items-center justify-center">
                     <span className="text-5xl">
-                      {project.slug === 'opulentjewel'
+                      {project.slug === 'ratnasamhita'
                         ? '💎'
                         : project.category === 'Fintech'
                         ? '💳'
