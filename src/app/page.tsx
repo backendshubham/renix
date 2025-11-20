@@ -210,7 +210,7 @@ export default function Home() {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
                     <AnimatedLink
-                      href="https://opulentjewel.renix.live"
+                      href="https://ratnasamhita.renix.live"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all duration-200 font-medium text-sm md:text-base shadow-soft hover:shadow-hover"
