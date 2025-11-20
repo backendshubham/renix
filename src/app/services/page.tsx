@@ -89,6 +89,91 @@ export default function Services() {
           ))}
         </AnimatedSection>
 
+        {/* OpulentJewel Featured Section */}
+        <AnimatedItem className="mb-12 md:mb-16">
+          <Card className="bg-gradient-to-br from-primary/10 via-accent/5 to-primary/5 border-2 border-primary/20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-4xl md:text-5xl">💎</span>
+                  <div>
+                    <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-medium mb-2 inline-block">
+                      Featured Product
+                    </span>
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-ink">
+                      OpulentJewel
+                    </h2>
+                    <p className="text-sm md:text-base text-primary/80 font-medium">
+                      Premium Jewelry Management System
+                    </p>
+                  </div>
+                </div>
+                <p className="text-base md:text-lg text-muted mb-6 leading-relaxed">
+                  Transform your jewelry business with a complete, cloud-based management solution. 
+                  Streamline operations, improve customer experience, and grow your business with 
+                  features like QR codes, mobile billing, analytics, and multi-shop support.
+                </p>
+                <div className="grid grid-cols-2 gap-4 mb-6">
+                  <div className="bg-background/50 rounded-lg p-4">
+                    <p className="text-xs text-muted uppercase mb-1">Features</p>
+                    <p className="text-lg font-heading font-bold text-ink">20+</p>
+                  </div>
+                  <div className="bg-background/50 rounded-lg p-4">
+                    <p className="text-xs text-muted uppercase mb-1">Free Trial</p>
+                    <p className="text-lg font-heading font-bold text-ink">7 Days</p>
+                  </div>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <AnimatedLink
+                    href="https://opulentjewel.renix.live"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all duration-200 font-medium text-base md:text-lg shadow-soft hover:shadow-hover"
+                  >
+                    Access OpulentJewel Panel →
+                  </AnimatedLink>
+                  <AnimatedLink
+                    href="/case-studies/opulentjewel"
+                    className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 bg-white text-primary border-2 border-primary rounded-lg hover:bg-primary/5 transition-all duration-200 font-medium text-base md:text-lg"
+                  >
+                    View Case Study
+                  </AnimatedLink>
+                </div>
+              </div>
+              <div className="relative">
+                <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/10 rounded-2xl p-8 md:p-12 flex flex-col items-center justify-center text-center">
+                  <div className="text-6xl md:text-8xl mb-4 md:mb-6">💎</div>
+                  <h3 className="text-xl md:text-2xl font-heading font-semibold text-ink mb-3">
+                    Complete Business Management
+                  </h3>
+                  <ul className="space-y-2 text-sm md:text-base text-muted text-left max-w-xs">
+                    <li className="flex items-start">
+                      <span className="text-primary mr-2 flex-shrink-0 mt-1">✓</span>
+                      <span>Product & Inventory Management</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-primary mr-2 flex-shrink-0 mt-1">✓</span>
+                      <span>QR Code Generation</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-primary mr-2 flex-shrink-0 mt-1">✓</span>
+                      <span>Mobile Billing & Invoicing</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-primary mr-2 flex-shrink-0 mt-1">✓</span>
+                      <span>Real-time Analytics</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-primary mr-2 flex-shrink-0 mt-1">✓</span>
+                      <span>Multi-shop Support</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </AnimatedItem>
+
         {/* Service Benefits Section */}
         <section className="mb-12 md:mb-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
