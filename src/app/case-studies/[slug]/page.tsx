@@ -140,7 +140,7 @@ export default function CaseStudy({ params }: { params: { slug: string } }) {
               <Card hover={false}>
                 <div className="text-center">
                   <AnimatedLink
-                    href="https://opulentjewel.renix.live"
+                    href="https://ratnasamhita.renix.live"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 font-medium transition-colors"
