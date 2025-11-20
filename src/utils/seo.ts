@@ -25,10 +25,11 @@ export const defaultMetadata: Metadata = {
     description: 'We design and build resilient digital experiences for ambitious teams.',
     images: [
       {
-        url: '/og-image.svg',
+        url: 'https://renix.live/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Renix Solutions',
+        type: 'image/jpeg',
       },
     ],
   },
@@ -36,7 +37,7 @@ export const defaultMetadata: Metadata = {
     card: 'summary_large_image',
     title: 'Renix Solutions — Modern Software & Design Studio',
     description: 'We design and build resilient digital experiences for ambitious teams.',
-    images: ['/og-image.svg'],
+    images: ['https://renix.live/og-image.jpg'],
   },
   robots: {
     index: true,
@@ -67,11 +68,21 @@ export function generatePageMetadata(
       title: `${title} | Renix Solutions`,
       description,
       url: `https://renix.live${path}`,
+      images: [
+        {
+          url: 'https://renix.live/og-image.jpg',
+          width: 1200,
+          height: 630,
+          alt: title,
+          type: 'image/jpeg',
+        },
+      ],
     },
     twitter: {
       ...defaultMetadata.twitter,
       title: `${title} | Renix Solutions`,
       description,
+      images: ['https://renix.live/og-image.jpg'],
     },
     alternates: {
       canonical: `https://renix.live${path}`,
