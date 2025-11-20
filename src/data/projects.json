@@ -42,18 +42,18 @@
     "slug": "healthcare-portal"
   },
   {
-    "id": "opulentjewel",
-    "title": "OpulentJewel - Premium Jewelry Management System",
+    "id": "ratnasamhita",
+    "title": "RatnaSamhita - Premium Jewelry Management System",
     "category": "Retail",
     "description": "Complete cloud-based management platform for jewelry retailers. Streamlines operations, improves customer experience, and helps grow jewelry businesses with features like QR codes, mobile billing, analytics, and multi-shop support.",
-    "image": "/projects/opulentjewel.jpg",
+    "image": "/projects/ratnasamhita.jpg",
     "tags": ["Next.js", "TypeScript", "Cloud", "Razorpay", "Multi-tenant", "QR Codes"],
     "metrics": {
       "features": "20+",
       "trial": "7-day free",
       "security": "Enterprise-grade"
     },
-    "slug": "opulentjewel"
+    "slug": "ratnasamhita"
   }
 ]
 
