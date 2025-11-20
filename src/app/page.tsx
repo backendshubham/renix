@@ -185,6 +185,52 @@ export default function Home() {
         </div>
       </section>
 
+      {/* OpulentJewel Featured Hint */}
+      <section className="py-12 md:py-16 bg-gradient-to-br from-primary/5 via-accent/5 to-primary/5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedItem>
+            <Card className="bg-gradient-to-br from-primary/10 via-accent/5 to-primary/10 border-2 border-primary/20">
+              <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+                <div className="flex-shrink-0">
+                  <div className="w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-primary/30 via-accent/15 to-primary/40 rounded-2xl flex items-center justify-center shadow-soft">
+                    <span className="text-5xl md:text-6xl">💎</span>
+                  </div>
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
+                    <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-medium">
+                      Featured Product
+                    </span>
+                  </div>
+                  <h3 className="text-2xl md:text-3xl font-heading font-bold text-ink mb-2">
+                    OpulentJewel
+                  </h3>
+                  <p className="text-base md:text-lg text-muted mb-4 leading-relaxed">
+                    Premium Jewelry Management System - Transform your jewelry business with complete cloud-based management solution.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+                    <AnimatedLink
+                      href="https://opulentjewel.renix.live"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all duration-200 font-medium text-sm md:text-base shadow-soft hover:shadow-hover"
+                    >
+                      Access Panel →
+                    </AnimatedLink>
+                    <AnimatedLink
+                      href="/case-studies/opulentjewel"
+                      className="inline-flex items-center justify-center px-6 py-3 bg-white text-primary border-2 border-primary rounded-lg hover:bg-primary/5 transition-all duration-200 font-medium text-sm md:text-base"
+                    >
+                      Learn More
+                    </AnimatedLink>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </AnimatedItem>
+        </div>
+      </section>
+
       {/* Featured Projects */}
       <section className="py-16 md:py-20 lg:py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -199,8 +245,20 @@ export default function Home() {
               <AnimatedItem key={project.id}>
                 <Link href={`/case-studies/${project.slug}`}>
                   <Card>
-                    <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg mb-6 flex items-center justify-center">
-                      <span className="text-6xl">{project.category === 'Fintech' ? '💳' : project.category === 'Retail' ? '🛍️' : '🏥'}</span>
+                    <div className={`aspect-video rounded-lg mb-6 flex items-center justify-center ${
+                      project.slug === 'opulentjewel'
+                        ? 'bg-gradient-to-br from-primary/30 via-accent/15 to-primary/40 shadow-soft'
+                        : 'bg-gradient-to-br from-primary/10 to-accent/10'
+                    }`}>
+                      <span className="text-6xl">
+                        {project.slug === 'opulentjewel'
+                          ? '💎'
+                          : project.category === 'Fintech'
+                          ? '💳'
+                          : project.category === 'Retail'
+                          ? '🛍️'
+                          : '🏥'}
+                      </span>
                     </div>
                     <div className="mb-3">
                       <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium">
