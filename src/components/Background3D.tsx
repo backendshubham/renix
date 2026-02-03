@@ -31,7 +31,7 @@ export default function Background3D({ intensity = 0.3 }: { intensity?: number }
       const { innerWidth, innerHeight } = window
       const x = (clientX / innerWidth - 0.5) * 20
       const y = (clientY / innerHeight - 0.5) * 20
-      
+
       if (container) {
         container.style.transform = `translate(${x}px, ${y}px)`
       }
@@ -109,20 +109,57 @@ export default function Background3D({ intensity = 0.3 }: { intensity?: number }
         />
       ))}
 
-      {/* Data stream lines */}
-      <div className="absolute inset-0">
-        {Array.from({ length: 12 }).map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-px bg-gradient-to-b from-transparent via-accent/40 to-transparent"
-            style={{
-              left: `${(i * 8.33) % 100}%`,
-              height: '100%',
-              animation: `stream-flow ${3 + (i % 3)}s ease-in-out infinite`,
-              animationDelay: `${i * 0.3}s`,
-            }}
-          />
-        ))}
+      {/* Circular Particle Eclipse */}
+      <div className="absolute top-[20%] left-[25%] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+        {/* Central Glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/5 rounded-full blur-3xl" />
+
+        {/* Ring 1 - Inner Orbit */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[650px] border border-accent/30 border-dashed rounded-full animate-[spin_30s_linear_infinite]">
+          {Array.from({ length: 8 }).map((_, i) => (
+            <div
+              key={`ring1-${i}`}
+              className="absolute w-3 h-3 bg-accent rounded-full"
+              style={{
+                left: '50%',
+                top: '50%',
+                transform: `translate(-50%, -50%) rotate(${i * 45}deg) translate(325px)`,
+                boxShadow: `0 0 10px 2px rgba(14, 165, 233, 0.5)`
+              }}
+            />
+          ))}
+        </div>
+
+        {/* Ring 2 - Middle Orbit */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] border border-secondary/30 border-dashed rounded-full animate-[spin_45s_linear_infinite_reverse]">
+          {Array.from({ length: 12 }).map((_, i) => (
+            <div
+              key={`ring2-${i}`}
+              className="absolute w-2 h-2 bg-secondary rounded-full"
+              style={{
+                left: '50%',
+                top: '50%',
+                transform: `translate(-50%, -50%) rotate(${i * 30}deg) translate(450px)`,
+                opacity: 0.8
+              }}
+            />
+          ))}
+        </div>
+
+        {/* Ring 3 - Outer Orbit */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] h-[1200px] border border-accent/20 border-dashed rounded-full animate-[spin_60s_linear_infinite]">
+          {Array.from({ length: 16 }).map((_, i) => (
+            <div
+              key={`ring3-${i}`}
+              className="absolute w-1.5 h-1.5 bg-accent/60 rounded-full"
+              style={{
+                left: '50%',
+                top: '50%',
+                transform: `translate(-50%, -50%) rotate(${i * 22.5}deg) translate(600px)`,
+              }}
+            />
+          ))}
+        </div>
       </div>
 
     </div>

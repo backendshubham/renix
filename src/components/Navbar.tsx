@@ -38,18 +38,17 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.3 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${
-        isScrolled ? 'bg-background/95 backdrop-blur-sm shadow-soft' : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${isScrolled ? 'bg-background/95 backdrop-blur-sm shadow-soft' : 'bg-transparent'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-3">
             <Image
-              src="/logo.svg"
+              src="/onlyR.png"
               alt="Renix Solutions Logo"
-              width={32}
-              height={32}
+              width={30}
+              height={30}
               className="w-8 h-8"
             />
             <div className="flex items-center space-x-1">
@@ -66,15 +65,13 @@ export default function Navbar() {
                 <motion.div key={link.href} whileHover={{ y: -2 }} whileTap={{ y: 0 }}>
                   <Link
                     href={link.href}
-                    className={`transition-colors duration-200 text-sm font-medium relative group ${
-                      active ? 'text-primary' : 'text-muted hover:text-primary'
-                    }`}
+                    className={`transition-colors duration-200 text-sm font-medium relative group ${active ? 'text-primary' : 'text-muted hover:text-primary'
+                      }`}
                   >
                     {link.label}
                     <span
-                      className={`absolute bottom-0 left-0 h-0.5 bg-primary transition-all duration-200 ${
-                        active ? 'w-full' : 'w-0 group-hover:w-full'
-                      }`}
+                      className={`absolute bottom-0 left-0 h-0.5 bg-primary transition-all duration-200 ${active ? 'w-full' : 'w-0 group-hover:w-full'
+                        }`}
                     />
                   </Link>
                 </motion.div>
@@ -132,9 +129,8 @@ export default function Navbar() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className={`block transition-colors duration-200 font-medium ${
-                      active ? 'text-primary' : 'text-muted hover:text-primary'
-                    }`}
+                    className={`block transition-colors duration-200 font-medium ${active ? 'text-primary' : 'text-muted hover:text-primary'
+                      }`}
                   >
                     {link.label}
                   </Link>
