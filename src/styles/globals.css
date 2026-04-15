@@ -3,6 +3,28 @@
 @tailwind utilities;
 
 @layer base {
+  /* ── Smooth scroll ── */
+  html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary, #6366f1) transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #6366f1;
+    border-radius: 99px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4f46e5;
+  }
+
+
   :root {
     /* Font variables are injected by Next.js font loader */
   }
@@ -226,3 +248,64 @@
       }
     }
 
+/* ── Scroll reveal utility ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Text shimmer ── */
+@keyframes text-shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.text-shimmer {
+  background: linear-gradient(90deg, #6366f1 0%, #a5b4fc 40%, #6366f1 80%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: text-shimmer 3s linear infinite;
+}
+
+/* ── Glow border ── */
+@keyframes glow-border {
+  0%, 100% { box-shadow: 0 0 0px 0px rgba(99,102,241,0.3); }
+  50%       { box-shadow: 0 0 20px 4px rgba(99,102,241,0.45); }
+}
+.glow-border {
+  animation: glow-border 3s ease-in-out infinite;
+}
+
+/* ── Slide up ── */
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-slide-up {
+  animation: slide-up 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ── Bounce subtle ── */
+@keyframes bounce-subtle {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-6px); }
+}
+.animate-bounce-subtle {
+  animation: bounce-subtle 2.5s ease-in-out infinite;
+}
+
+/* ── Page entrance ── */
+@keyframes page-in {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+main {
+  animation: page-in 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}

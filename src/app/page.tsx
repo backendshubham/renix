@@ -192,8 +192,12 @@ export default function Home() {
             <Card className="bg-gradient-to-br from-primary/10 via-accent/5 to-primary/10 border-2 border-primary/20">
               <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
                 <div className="flex-shrink-0">
-                  <div className="w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-primary/30 via-accent/15 to-primary/40 rounded-2xl flex items-center justify-center shadow-soft">
-                    <span className="text-5xl md:text-6xl">💎</span>
+                  <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-2xl overflow-hidden shadow-soft border-2 border-primary/20">
+                    <img 
+                      src="/projects/ratnasamhita.png" 
+                      alt="RatnaSamhita"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
                 <div className="flex-1 text-center md:text-left">
@@ -231,6 +235,127 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Dovies Fitness Featured Hint */}
+      <section className="py-12 md:py-16 bg-gradient-to-br from-emerald-500/5 via-teal-500/5 to-emerald-500/5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedItem>
+            <Card className="bg-gradient-to-br from-emerald-500/10 via-teal-500/5 to-emerald-500/10 border-2 border-emerald-500/20">
+              <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+                <div className="flex-shrink-0">
+                  <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-2xl overflow-hidden shadow-soft border-2 border-emerald-500/20">
+                    <img
+                      src="/projects/dovies-fitness.png"
+                      alt="Dovies Fitness"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
+                    <span className="px-3 py-1 bg-emerald-500/20 text-emerald-600 rounded-full text-xs font-medium">
+                      Featured Product
+                    </span>
+                    <span className="px-3 py-1 bg-teal-500/10 text-teal-600 rounded-full text-xs font-medium">
+                      Health &amp; Fitness
+                    </span>
+                  </div>
+                  <h3 className="text-2xl md:text-3xl font-heading font-bold text-ink mb-2">
+                    Dovies Fitness
+                  </h3>
+                  <p className="text-base md:text-lg text-muted mb-4 leading-relaxed">
+                    A feature-rich fitness app for adults — delivering curated workout plans, exercise tracking, real-time trainer messaging, and seamless subscription management.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-5 justify-center md:justify-start">
+                    {['Node.js', 'Express.js', 'MySQL', 'AWS', 'Stripe', 'Socket.io'].map((tag) => (
+                      <span key={tag} className="px-3 py-1 bg-emerald-500/10 text-emerald-700 rounded-full text-xs font-medium border border-emerald-500/20">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+                    <AnimatedLink
+                      href="https://www.doviesfitness.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-6 py-3 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-all duration-200 font-medium text-sm md:text-base shadow-soft hover:shadow-hover"
+                    >
+                      Visit Live Site →
+                    </AnimatedLink>
+                    <AnimatedLink
+                      href="/case-studies/dovies-fitness"
+                      className="inline-flex items-center justify-center px-6 py-3 bg-white text-emerald-600 border-2 border-emerald-500 rounded-lg hover:bg-emerald-50 transition-all duration-200 font-medium text-sm md:text-base"
+                    >
+                      View Case Study
+                    </AnimatedLink>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </AnimatedItem>
+        </div>
+      </section>
+
+      {/* ConnektUs Featured Hint */}
+      <section className="py-12 md:py-16 bg-gradient-to-br from-orange-500/5 via-amber-500/5 to-orange-500/5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedItem>
+            <Card className="bg-gradient-to-br from-orange-500/10 via-amber-500/5 to-orange-500/10 border-2 border-orange-400/20">
+              <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+                <div className="flex-shrink-0">
+                  <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-2xl overflow-hidden shadow-soft border-2 border-orange-400/20">
+                    <img
+                      src="/projects/connektus.png"
+                      alt="ConnektUs"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
+                    <span className="px-3 py-1 bg-orange-500/20 text-orange-600 rounded-full text-xs font-medium">
+                      Featured Product
+                    </span>
+                    <span className="px-3 py-1 bg-amber-500/10 text-amber-700 rounded-full text-xs font-medium">
+                      Social &amp; Career Networking
+                    </span>
+                  </div>
+                  <h3 className="text-2xl md:text-3xl font-heading font-bold text-ink mb-2">
+                    ConnektUs
+                  </h3>
+                  <p className="text-base md:text-lg text-muted mb-4 leading-relaxed">
+                    A professional social networking platform that makes self-care and career growth accessible — with exclusive wellness discounts, job matching, networking events, and a supportive community.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-5 justify-center md:justify-start">
+                    {['React Native', 'PHP', 'CodeIgniter', 'PostgreSQL', 'AWS'].map((tag) => (
+                      <span key={tag} className="px-3 py-1 bg-orange-500/10 text-orange-700 rounded-full text-xs font-medium border border-orange-400/20">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+                    <AnimatedLink
+                      href="https://play.google.com/store/apps/details?id=com.connektus"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-all duration-200 font-medium text-sm md:text-base shadow-soft hover:shadow-hover"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.3.17.64.24.99.2l13.7-11.96-2.84-2.84L3.18 23.76zm16.7-13.38L16.2 8.1l-3.07 3.07 3.07 3.07 3.72-2.28c.69-.4.69-1.49-.04-1.88zM3.06.25C2.72.59 2.5 1.1 2.5 1.77v20.45c0 .67.22 1.18.56 1.52L14.1 11.97 3.06.25zM4.17.03L16.2 6.88l-3.07 3.06L4.17.03z"/></svg>
+                      Get on Play Store
+                    </AnimatedLink>
+                    <AnimatedLink
+                      href="/case-studies/connektus"
+                      className="inline-flex items-center justify-center px-6 py-3 bg-white text-orange-600 border-2 border-orange-400 rounded-lg hover:bg-orange-50 transition-all duration-200 font-medium text-sm md:text-base"
+                    >
+                      View Case Study →
+                    </AnimatedLink>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </AnimatedItem>
+        </div>
+      </section>
+
       {/* Featured Projects */}
       <section className="py-16 md:py-20 lg:py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -241,24 +366,28 @@ export default function Home() {
             className="mb-12 md:mb-16"
           />
           <AnimatedSection className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {projectsData.slice(0, 3).map((project) => (
+            {projectsData.map((project) => (
               <AnimatedItem key={project.id}>
                 <Link href={`/case-studies/${project.slug}`}>
-                  <Card>
-                    <div className={`aspect-video rounded-lg mb-6 flex items-center justify-center ${
-                      project.slug === 'ratnasamhita'
-                        ? 'bg-gradient-to-br from-primary/30 via-accent/15 to-primary/40 shadow-soft'
-                        : 'bg-gradient-to-br from-primary/10 to-accent/10'
-                    }`}>
-                      <span className="text-6xl">
-                        {project.slug === 'ratnasamhita'
-                          ? '💎'
-                          : project.category === 'Fintech'
-                          ? '💳'
-                          : project.category === 'Retail'
-                          ? '🛍️'
-                          : '🏥'}
-                      </span>
+                  <Card className="group h-full">
+                    <div className="aspect-video rounded-lg mb-6 overflow-hidden relative shadow-soft">
+                      {'video' in project && project.video ? (
+                        <video
+                          src={(project as { video?: string }).video}
+                          autoPlay
+                          muted
+                          loop
+                          playsInline
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
+                      ) : (
+                        <img
+                          src={project.image}
+                          alt={project.title}
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                      )}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
                     </div>
                     <div className="mb-3">
                       <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium">

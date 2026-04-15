@@ -26,16 +26,12 @@ export default function CaseStudies() {
             <AnimatedItem key={project.id}>
               <Link href={`/case-studies/${project.slug}`}>
                 <Card>
-                  <div className="aspect-video bg-line rounded-lg mb-4 flex items-center justify-center">
-                    <span className="text-5xl">
-                      {project.slug === 'ratnasamhita'
-                        ? '💎'
-                        : project.category === 'Fintech'
-                        ? '💳'
-                        : project.category === 'Retail'
-                        ? '🛍️'
-                        : '🏥'}
-                    </span>
+                  <div className="aspect-video bg-line rounded-lg mb-4 overflow-hidden shadow-inner group">
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
                   </div>
                   <div className="mb-2">
                     <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium">
