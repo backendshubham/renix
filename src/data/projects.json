@@ -65,7 +65,7 @@
     "image": "/projects/ratnasamhita.png",
     "tags": ["Node.js", "Express", "PostgreSQL", "AWS S3", "QR Billing", "Lending Module"],
     "metrics": {
-      "billing_automation": "95%",
+      "billing": "95%",
       "checkout_time": "-70%",
       "scalability": "Enterprise"
     },
